@@ -21,14 +21,14 @@ class PrintBook(Book):
 
 class Library():
     def __init__(self):
-        self._books = []
+        self.books = []
     
     def add_book(self, book):
-        self._books.append(book)
+        self.books.append(book)
 
     def list_books(self):
-        if not self._books:
+        if not self.books:
             print("The library is empty.")
         else:
-            for book in self._books:
+            for book in self.books:
                 print(book.__str__())
